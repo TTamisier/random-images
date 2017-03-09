@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <title>Doodles</title>
+    <script>
+    var myImages1 = new Array();
+    myImages1.push("img/image1.jpg");
+    myImages1.push("img/image2.jpg");
+    myImages1.push("img/image3.jpg");
+    myImages1.push("img/image4.jpg");
+
+
+
+    function getRandomInt(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function pickimg2() {
+      document.randimg.src = myImages1[getRandomInt(0, myImages1.length - 1)];
+    }
+</script>
+
+  </head>
+  <body>
+    <div class="header">
+      <h1>Random Doodles</h1>
+      <p>Tom Tamisier</p>
+
+    </div>
+    <div>
+        <div class="doodle">
+          <a href="#" onclick="pickimg2();return false;">
+            <img src="img/image1.jpg" name="randimg" border="0">
+          </a>
+        </div>
+
+      </div>
+      
+  </body>
+</html>
