@@ -46,9 +46,13 @@ p {
   width: 500px;
   text-align: center;
   margin: 0 auto;
-  padding-top: 10%; 
+  padding-top: 10%;
 }
 
+#toggle {
+  width: 200px;
+  margin:0 auto;
+}
 
 .doodle {
   padding: 0;
