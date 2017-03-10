@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+    <script src="js/scripts.js"></script>
     <script src="js/jquery-3.1.1.min.js"></script>
     <title>Doodles</title>
     <script>
@@ -22,15 +23,28 @@
     function pickimg2() {
       document.randimg.src = myImages1[getRandomInt(0, myImages1.length - 1)];
     }
-</script>
+    </script>
+    <script>
+    jQuery(document).ready(function(){
+        jQuery('#toggle').on('click', function(event) {
+             jQuery('#about').toggle('show');
+        });
+    });
+
+    </script>
 
   </head>
   <body>
     <div class="header">
       <h1>Random Doodles</h1>
-      <p>Tom Tamisier</p>
+      <p id="toggle"><a href="#">About</a></p>
 
     </div>
+
+    <div id="about">
+      <p>This page regroups a lot of small projects or doodles that I did. It represents my way of thinking, not my skills</p>
+    </div>
+
     <div>
         <div class="doodle">
           <a href="#" onclick="pickimg2();return false;">
@@ -39,6 +53,6 @@
         </div>
 
       </div>
-      
+
   </body>
 </html>

@@ -15,8 +15,7 @@ body {
 
 .header {
   width: 100%;
-  height: 100px;
-  margin-bottom: 30px;
+  height: 15%;
   text-align: center;
   color: #CDB380;
   padding-top: 2.5%;
@@ -33,6 +32,23 @@ h1 {
 p {
   font-size: 18px;
 }
+
+#about {
+  background-color: white;
+  z-index: 1;
+  height: 85%;
+  width: 100%;
+  position: absolute;
+  display: none;
+}
+
+#about p {
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 10%; 
+}
+
 
 .doodle {
   padding: 0;
@@ -54,4 +70,9 @@ img {
  right:0;
  bottom:0;
  margin:auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
